@@ -1,3 +1,7 @@
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
+![Vite](https://img.shields.io/badge/Vite-7-purple?logo=vite)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript)
+![License](https://img.shields.io/badge/License-MIT-green)
 # 💣 React Minesweeper
 
 A modern implementation of the classic **Minesweeper** game built using **React** and **Vite**. The application features an interactive grid, mine detection logic, flagging functionality, and a responsive user interface.
