@@ -1,16 +1,150 @@
-# React + Vite
+# 💣 React Minesweeper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern implementation of the classic **Minesweeper** game built using **React** and **Vite**. The application features an interactive grid, mine detection logic, flagging functionality, and a responsive user interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 🎮 Features
 
-## React Compiler
+* 💣 Random mine generation
+* 🚩 Flag suspected mines
+* 🔢 Automatic adjacent mine count
+* 🖱 Left-click to reveal cells
+* 🚩 Right-click to place/remove flags
+* 🎯 Win and Lose detection
+* 📱 Responsive design
+* ⚡ Fast development using Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+# 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Frontend
+
+* React.js
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+
+## Build Tool
+
+* Vite
+
+---
+
+# 📂 Project Structure
+
+```text
+react-minesweeper/
+│
+├── public/
+├── src/
+│   ├── components/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── ...
+├── package.json
+├── vite.config.js
+├── index.html
+└── README.md
+```
+
+---
+
+# 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/badivana/react-minesweeper.git
+```
+
+Go to the project directory
+
+```bash
+cd react-minesweeper
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+---
+
+# 🎮 How to Play
+
+* Left-click to reveal a cell.
+* Right-click to place or remove a flag.
+* Numbers indicate the number of adjacent mines.
+* Reveal all safe cells to win.
+* Clicking on a mine ends the game.
+
+---
+
+# 📸 Screenshots
+
+```
+images/
+├── home.png
+├── gameplay.png
+├── victory.png
+├── gameover.png
+```
+
+
+---
+
+# 📈 Future Improvements
+
+* ⏱ Timer
+* 🏆 High Score System
+* 😊 Emoji Status Button
+* 🎚 Difficulty Levels
+* 🌙 Dark Mode
+* 📱 Mobile Optimization
+* 🔊 Sound Effects
+* ☁ Online Leaderboard
+
+---
+
+# 🎯 Learning Outcomes
+
+This project demonstrates:
+
+* React Components
+* State Management
+* Event Handling
+* Conditional Rendering
+* Grid-Based Game Logic
+* Responsive UI Design
+* JavaScript Algorithms
+
+---
+
+# 👨‍💻 Author
+
+**Prajwal B T**
+
+Information Science Engineering Student
+
+Interested in Full Stack Development, Artificial Intelligence, and Software Engineering.
+
+---
+
+# ⭐ Support
+
+If you enjoyed this project, consider giving it a ⭐ on GitHub.
