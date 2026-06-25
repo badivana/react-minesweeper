@@ -128,6 +128,40 @@ export default function App() {
     return ''
   }
 
+  const getNumberColor = (number) => {
+
+    switch(number){
+
+        case 1:
+            return "#2196F3";
+
+        case 2:
+            return "#4CAF50";
+
+        case 3:
+            return "#F44336";
+
+        case 4:
+            return "#3F51B5";
+
+        case 5:
+            return "#795548";
+
+        case 6:
+            return "#009688";
+
+        case 7:
+            return "#000000";
+
+        case 8:
+            return "#9E9E9E";
+
+        default:
+            return "white";
+    }
+
+  }
+
   return (
     <div className="game-container">
       <h1>💣 Minesweeper</h1>
@@ -135,20 +169,28 @@ export default function App() {
       <div className="controls">
         <button onClick={resetGame}>🔄 New Game</button>
       </div>
-      <div className="board" onContextMenu={(e) => e.preventDefault()}>
-        {board.map((row, rowIndex) =>
-          row.map((cell, colIndex) => (
-            <button
-              key={`${rowIndex}-${colIndex}`}
-              className={`cell ${cell.isRevealed ? 'revealed' : ''} ${cell.isMine && cell.isRevealed ? 'mine' : ''}`}
-              onClick={() => handleLeftClick(rowIndex, colIndex)}
-              onContextMenu={(e) => handleRightClick(e, rowIndex, colIndex)}
-            >
-              {getCellContent(cell)}
-            </button>
-          ))
-        )}
+      <div className="board-wrapper">
+        <div className="board" onContextMenu={(e) => e.preventDefault()}>
+          {board.map((row, rowIndex) =>
+            row.map((cell, colIndex) => (
+              <button
+                key={`${rowIndex}-${colIndex}`}
+                className={`cell ${cell.isRevealed ? 'revealed' : ''} ${cell.isMine && cell.isRevealed ? 'mine' : ''}`}
+                onClick={() => handleLeftClick(rowIndex, colIndex)}
+                onContextMenu={(e) => handleRightClick(e, rowIndex, colIndex)}
+              >
+                <span
+                  style={{
+                    color: getNumberColor(cell.adjacentMines)
+                  }}
+                > 
+                  {getCellContent(cell)}
+                </span>
+              </button>
+            ))
+          )}
+        </div>
       </div>
-    </div>
+      </div>
   )
 }
